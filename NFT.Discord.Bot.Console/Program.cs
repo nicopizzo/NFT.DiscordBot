@@ -4,6 +4,7 @@ using NFT.DiscordBot;
 using NFT.DiscordBot.Interfaces;
 
 var config = new ConfigurationBuilder()
+    .AddEnvironmentVariables()
     .AddUserSecrets<Program>()
     .Build();
 
